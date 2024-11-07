@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* !--------------------------------------------Start clolor-------------------------------------------------  */
+
+:root {
+    --gradient: linear-gradient(135deg, #0d47a1, #d32f2f);
+    --textColor: #000000;
+    --white: #ffffff;
+}
+
+/* ?------------------------------------------End-clolor-----------------------------------------------------*/
+/* !------------------------------------------Start-Global---------------------------------------------------*/
+
+body{
+    font-family: 'roboto mono','Montserrat Alternates','IBM Plex Mono', sans-serif;
+    font-size: 16px;
+    padding: 2rem; /*? 1rem = 16px */
+
+    background: var(--gradient);
+    color: var(--textColor);
+}
+
+
+
+/* ?----------------------------------------End-Global------------------------------------------------------- */
+
+/* ! */
+/* !----------------------------------------Start Header----------------------------------------------------  */
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;   
+    gap: 3rem;
+}
+.headerImage img{
+    width: 35rem;
+    height: 35rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--white);
+}
+
+.headerContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+
+    h1{
+        font-size: 2.2rem;
+        font-weight: 900;
+    }
+    h2{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .headerButton{
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+        a{
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            background: var(--white);
+            color: var(--gradient);
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            &:hover{
+                background: var(--gradient);
+                color: var(--white);
+            }
+        }
+    }
+}
+
+
+/* ?-------------------------------------------------End Header---------------------------------------------- */
+
+
+
+

@@ -8,7 +8,7 @@
 
 :root {
     --gradient: linear-gradient(135deg, #0d47a1, #d32f2f);
-    --OppositeGradient: linear-gradient(135deg, #d32f2f,#0d47a1);
+    --OppositeGradient: linear-gradient(135deg, #d32f2fea,#0d47a1);
     --lightGradient: linear-gradient(135deg, #d32f2fb7, #0d48a1c0);
     --textColor: #000000;
     --white: #ffffffc8;
@@ -98,11 +98,11 @@ button {
 
     }
 }
-
+/* ?----------------------------------------end-navBar--------------------------------------------------------- */
 /* !----------------------------------------Start Header----------------------------------------------------  */
 
 
-header {
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -147,3 +147,155 @@ header {
 
 
 /* ?-------------------------------------------------End Header---------------------------------------------- */
+/* !-------------------------------------------------Start About---------------------------------------------- */
+
+#about {
+    background: var(--OppositeGradient);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+    gap: 3rem;
+    height: 100vh;
+    .aboutImage img {
+        width: 35rem;
+        height: 35rem;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid var(--white);
+    }
+    .aboutContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        p {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+    }
+}
+
+/* ?-------------------------------------------------End About---------------------------------------------- */
+/* !-------------------------------------------------Start Services---------------------------------------------- */
+
+article{
+    background: var(--gradient);
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+    gap: 3rem;
+    height: 100vh;
+
+    .services_heading{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        h2{
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        p{
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+    }
+    .services_images{
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .services_image img{
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid var(--white);
+        margin: 0 1rem;
+    }
+
+}
+
+/* ?-------------------------------------------------End Services---------------------------------------------- */
+/* !-------------------------------------------------Start CTA---------------------------------------------- */
+
+#cta {
+    background: var(--OppositeGradient);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+    gap: 3rem;
+    height: 100vh;
+    .cta_img img {
+        width: 35rem;
+        height: 35rem;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid var(--white);
+    }
+    .cta_Content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        p {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+        .ctaButton {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+    }
+}
+
+/* ?-------------------------------------------------End CTA---------------------------------------------- */
+/* !-------------------------------------------------Start Footer---------------------------------------------- */
+
+#footer {
+    background: var(--lightGradient);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 2rem 3rem;
+    /* height: 50vh; */
+    justify-content: center;
+    align-items: center;
+
+    .footerContent {
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        p {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+        
+    }
+    .footer_suscription {
+        margin-top: 1rem;
+    }
+
+
+}
+
+

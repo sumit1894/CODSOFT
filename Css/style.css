@@ -221,7 +221,7 @@ article{
         border-radius: 50%;
         object-fit: cover;
         border: 2px solid var(--white);
-        margin: 0 1rem;
+        margin: 1.2rem 1rem;
     }
 
 }
